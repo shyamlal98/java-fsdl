@@ -1,0 +1,28 @@
+package hello;
+import java.io.OutputStream;
+import java.sql.*;  
+public class MySQLConnect {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try {
+			Process pb = new ProcessBuilder("gedit").start();
+			OutputStream out = pb.getOutputStream();
+			out.write(1);
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","user","password");
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery("select * from users");
+			while(rs.next()) {
+				System.out.println("UserId : "+rs.getInt(0)+" UserName : "+rs.getString(1));
+			   
+			}
+			conn.close();
+		}catch(Exception ex) {
+			ex.printStackTrace();
+		}
+
+	}
+
+}

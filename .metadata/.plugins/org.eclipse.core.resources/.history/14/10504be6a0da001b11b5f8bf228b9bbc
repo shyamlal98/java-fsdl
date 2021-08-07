@@ -1,0 +1,82 @@
+package practice;
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Calculater {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int val1,val2;
+		char operator;
+		double result;
+        int fun;
+        do {
+        	System.out.println("Choose to appy the funcion\n 1 :addition \n 2: Subtraction\n 3: Multiplication\n 4: Division \n 5: Cancel");
+            Scanner scan = new Scanner(System.in);
+        	fun = scan.nextInt();
+        	ArrayList<Float> al = new ArrayList<Float>();
+        	float val1;
+        	switch(fun) {
+    			
+	        	case 1:
+	        		System.out.println("Please enter the values for Addition \n");
+	        		while(scan.hasNext()) {
+	        			al.add(Float.parseFloat(scan.next()));
+	        			if(scan.next() == "\n") break;
+	        		}
+	        		System.out.println("Result of List : "+Calculater.add(al));
+	        		break;
+	        	case 2:
+	        		System.out.println("Please enter the values for Subtraction \n");
+	        		val1 = Float.parseFloat(scan.next());
+	        		while(scan.hasNext()) {
+	        			al.add(Float.parseFloat(scan.next()));
+	        		}
+	        		System.out.println("Result of List : "+Calculater.sub(val1, al));	  
+	        		break;
+	        	case 3:
+	        		System.out.println("Please enter the values for Multiplication \n");
+	        		val1 = Float.parseFloat(scan.next());
+	        		while(scan.hasNext()) {
+	        			al.add(Float.parseFloat(scan.next()));
+	        		}
+	        		System.out.println("Result of List : "+Calculater.mul(val1,al));
+	        		break;
+	        	case 4:
+	        		System.out.println("Please enter the values for Division \n");
+	        		val1 = Float.parseFloat(scan.next());
+	        		while(scan.hasNext()) {
+	        			al.add(Float.parseFloat(scan.next()));
+	        		}
+	        		System.out.println("Result of List : "+Calculater.div(val1,al));
+	        		break;
+	        	case 5:
+	        		System.exit(0);
+	        		break;
+        	}
+        }while(true);
+        
+	}
+	
+	public static float add(ArrayList<Float> val) {
+		float sum =0;
+		for(float a : val) sum += a;
+		return sum;
+	}
+	
+	public static float sub(float val1 , ArrayList<Float> val2) {
+		for(float a : val2) val1 -= a;
+		return val1;
+	}
+	
+	public static float mul(float val1, ArrayList<Float> val2) {
+		for(float a : val2) val1 *= a;
+		return val1;
+	}
+	
+	public static float div(float val1, ArrayList<Float> val2) {
+		for(float a : val2) val1 /= a;
+		return val1;
+	}
+
+}

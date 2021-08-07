@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;hello.Optional.java&apos; to &apos;Optional1.java&apos;&#x0A;- Original project: &apos;FirstProject&apos;&#x0A;- Original element: &apos;hello.Optional.java&apos;&#x0A;- Renamed element: &apos;hello.Optional1.java&apos;" description="Rename compilation unit &apos;Optional.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;hello{Optional.java" name="Optional1.java" references="false" stamp="1621089562173" version="1.0"/>
+</session>

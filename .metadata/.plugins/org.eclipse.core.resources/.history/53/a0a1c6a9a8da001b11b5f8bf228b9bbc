@@ -1,0 +1,68 @@
+package practice;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Calculater {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int val1,val2;
+        int fun;
+        Scanner scan = new Scanner(System.in);
+        do {
+        	System.out.println("Choose to appy the funcion\n 1 :addition \n 2: Subtraction\n 3: Multiplication\n 4: Division \n 5: Cancel");
+        	fun = scan.nextInt();
+        	switch(fun) {
+    			
+	        	case 1:
+	        		System.out.println("Please enter the values for Addition \n");
+                    val1 = scan.nextInt();
+                    val2 = scan.nextInt();
+	        		System.out.println("Result of "+val1 + "+"+val2 + ": "+Calculater.add(val1,val2));
+	        		break;
+	        	case 2:
+	        		System.out.println("Please enter the values for Subtraction \n");
+                    val1 = scan.nextInt();
+                    val2 = scan.nextInt();
+	        		System.out.println("Result of "+val1 + "-"+val2 + ": "+Calculater.sub(val1,val2));	  
+	        		break;
+	        	case 3:
+	        		System.out.println("Please enter the values for Multiplication \n");
+                    val1 = scan.nextInt();
+                    val2 = scan.nextInt();
+	        		System.out.println("Result of "+val1 + "*"+val2 + ": "+Calculater.mul(val1,val2));
+	        		break;
+	        	case 4:
+	        		System.out.println("Please enter the values for Division \n");
+                    val1 = scan.nextInt();
+                    val2 = scan.nextInt();
+	        		System.out.println("Result of "+val1 + "/"+val2 + ": "+Calculater.div(val1,val2));
+	        		break;
+	        	case 5:
+	        		System.exit(0);
+	        		break;
+        	}
+        }while(fun != 5);
+        System.out.println(" Thank you for using this calculator ! ");
+	}
+	
+	public static Double add(int val1, int val2) {
+        double result = val1 + val2;
+		return result;
+	}
+	
+	public static Double sub(int val1, int val2) {
+        double result = val1 - val2;
+		return result;
+	}
+	
+	public static Double mul(int val1, int val2) {
+        double result = val1 * val2;
+		return result;
+	}
+	
+	public static Double div(int val1, int val2) {
+        double result = val1 / val2;
+		return result;
+	}
+
+}
