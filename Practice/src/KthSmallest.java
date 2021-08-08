@@ -1,5 +1,3 @@
-import java.lang.*;
-import java.util.*;
 public class KthSmallest {
 
 	public static void main(String[] args) {
