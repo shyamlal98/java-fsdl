@@ -8,7 +8,7 @@ public class SelectionSort {
 		int arr[] = {9,8,7,6,5,4,2,1};
 		
 		selectionSort(arr);
-		//printArray(arr);
+		printArray(arr);
 
 	}
 	
@@ -21,11 +21,11 @@ public class SelectionSort {
 				if(arr[j] < arr[x]) {
 					x=j;
 				}
-				//printArray(arr);
+//				printArray(arr);
 			}
-			swap(arr,i,x);
-			//printArray(arr);
 			if(x==i) break;
+			swap(arr,i,x);
+			printArray(arr);
 		}
 	}
 	
