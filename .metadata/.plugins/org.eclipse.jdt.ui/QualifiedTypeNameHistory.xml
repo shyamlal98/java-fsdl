@@ -28,4 +28,6 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.awt.print.Printable"/>
+<fullyQualifiedTypeName name="coding_qn_practices.MergeSort"/>
 </qualifiedTypeNameHistroy>

@@ -2851,3 +2851,63 @@ java.io.FileNotFoundException: /home/shyamlal/java-fsdl-workspace/.metadata/.plu
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SESSION 2021-08-13 00:55:38.413 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_292
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/home/shyamlal/java-fsdl-workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-08-13 00:55:46.782
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-08-13 00:55:46.785
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui.ide 4 4 2021-08-13 04:54:26.388
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2021-08-13 04:54:26.398
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-08-13 04:54:26.398
+!MESSAGE The project description file (.project) for 'Full-Stack---The-Desk-Application-' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-08-13 04:54:27.061
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-08-13 04:54:27.250 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_292
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/home/shyamlal/java-fsdl-workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-08-13 04:54:28.399
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.core 4 0 2021-08-13 04:54:37.190
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '.git', absolute path: '/home/shyamlal/java-fsdl-workspace/Full-Stack---The-Desk-Application-/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:723)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:686)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:650)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:633)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:219)
+	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
+	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:709)
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:103)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:223)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:247)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:386)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:362)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

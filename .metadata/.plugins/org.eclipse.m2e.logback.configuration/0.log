@@ -934,3 +934,9 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2021-08-12 21:26:44,315 [Worker-108: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/shyamlal/java-fsdl-workspace/first-maven-project/src/main/resources
 2021-08-12 21:26:44,317 [Worker-108: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-08-12 21:26:44,317 [Worker-108: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/shyamlal/java-fsdl-workspace/first-maven-project/src/test/resources
+2021-08-13 00:55:44,198 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-08-13 00:55:46,779 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-13 00:55:46,783 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/shyamlal/java-fsdl-workspace/first-maven-project/src/main/resources
+2021-08-13 00:55:46,785 [Worker-0: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-13 00:55:46,786 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/shyamlal/java-fsdl-workspace/first-maven-project/src/test/resources
+2021-08-13 04:54:35,701 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

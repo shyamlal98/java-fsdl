@@ -4,7 +4,7 @@ public class MergeSort {
 
 	public static void main(String[] args) {
 		 int arr[] = { 12, 11, 13, 5, 6, 7 };
-		 printArray(arr);
+//		 printArray(arr);
 		 mergeSort(arr,0,arr.length-1);
 		 printArray(arr);
 	}
