@@ -15,11 +15,15 @@ public class InsertionSort {
 	
 	public static void insertionSort(int [] arr) {
 		int n = arr.length;
+		int x;
 		for(int i = 1; i < n; i++ ) {
 			int j = i;
 			while(j >= 0) {
+				x = arr[j];
 				if(j > 0 && arr[j-1] > arr[j])
 					swap(arr,j,j-1);
+				if(arr[j] == x)
+					break;
 				j--;
 			}
 			printArray(arr);
